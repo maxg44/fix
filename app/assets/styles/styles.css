@@ -1,2 +1,7 @@
 @import "normalize.css";
 @import "global/_mixins";
+@import "global/_global";
+@import "global/_variables";
+@import "global/_wrapper";
+@import "modules/_nav";
+@import "modules/_hero";
