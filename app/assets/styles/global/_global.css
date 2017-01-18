@@ -4,3 +4,24 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.main-heading {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: left;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+
+    @mixin atMedium {
+        font-size: 2.2em;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.2;
+    color: #333;
+}
