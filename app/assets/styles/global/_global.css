@@ -18,6 +18,13 @@
         margin-top: 40px;
         text-align: center;
     }
+
+    &--service {
+        font-size: 3.2em;
+        color: #eee;
+        font-weight: bold;
+        margin-top: 25%;
+    }
 }
 
 p {
