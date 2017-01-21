@@ -13,6 +13,12 @@
 
     &:hover {
         background-color: #ACE1AF;
+        color: darkgreen;
+    }
+
+    &--large {
+        font-size: 1.2em;
+        padding: 20px;
     }
 }
 
@@ -22,4 +28,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.button--service {
+    display: none;
+
+    @mixin atMedium {
+        display: inline-block;
+    }
+}
 

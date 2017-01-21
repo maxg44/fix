@@ -10,12 +10,12 @@
 
      @mixin atMedium {
         background-image: url('../../assets/images/header_image-medium.jpg');
-        height: 450px;
+        height: 530px;
     }
 
     @mixin atLarge {
         background-image: url('../../assets/images/header_image-large.jpg');
-        height: 600px;
+        height: 700px;
     }
 
    
