@@ -20,6 +20,29 @@
         font-size: 1.2em;
         padding: 20px;
     }
+
+    &--submit {
+        background-color: $subBlue;
+        font-size: 1em;
+        padding: 12px 50px;
+        cursor: pointer;
+        margin-top: 12px;
+        width: 100%;
+        
+
+        @mixin atMedium {
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            width: auto;
+        }
+
+        &:hover {
+            background-color: $subBlue;
+            border-color: $subBlue;
+            color: #fff;
+        }
+    }
 }
 
 

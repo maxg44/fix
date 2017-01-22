@@ -42,11 +42,11 @@
             <div class="hero_lift">
                 <h2 class="hero_lift-text">Vi ger er bra service där inga jobb är för små.</h2>
                 <div class="hero_lift-button-container">
-                    <a class="button button--hero" href="#">Läs mer om våra tjänster</a>
+                    <a class="button button--hero" href="#services">Läs mer om våra tjänster</a>
                 </div>
             </div>
         </div>
-        <div class="services">
+        <div id="services" class="services">
             <div class="wrapper">
                 <h2 class="main-heading">Vad kan vi hjälpa <strong>dig</strong> med?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi, eum alias at labore! Itaque voluptatum cupiditate id odit, neque mollitia corporis, possimus cumque quibusdam dolore dolores, sed vitae aliquam.</p>
@@ -147,10 +147,112 @@
         <div class="divider"></div>
         <div class="about">
             <div class="wrapper">
-
+                <h2 class="main-heading">Om Fixalla</h2>
+                <div class="about_container">
+                    <div class="about_image">
+                        <img src="assets/images/about.jpg" alt="about">
+                    </div>
+                    <div class="about_text">
+                        <h3>Välkommen till Fixalla</h3>
+                        <p>Vi har genom många år av egna renoveringar insett att man lämnar små saker och vissa saker blir aldrig klara. Det kan vara några lister som skall upp eller någon kran som skall bytas. Vi vet också att det inte är helt lätt att få tag i kompetent personal för de lite mindre jobben.
+                        Därav skapade vi Fixalla. Vi finns till för er och genom våra hantverkare ser vi till att slutföra era projekt!</p>
+                        <p>Vi skapar husfrid!</p>
+                        <p>Med varma och vänliga hälsningar Niklas och Carolin</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="contact">
+                <div class="contact_heading">
+                    <h2 class="main-heading main-heading--contact" >Kontakta oss <span>Så tar vi oss an era utmaningar</span></h2>
+                </div>
+                <div class="contact_container">
+                    <div class="contact_information">
+                        <div class="wrapper wrapper--contact">
+                            <h3 class="contact--heading">Kontaktinformation</h3>
+                            <div class="contact_information-holder">
+                                <div class="row row--information">
+                                    <div class="contact_information-holder--item">
+                                        <div class="contact_information-holder--item-image"><img src="assets/images/phone-icon.png" alt="location" height="35" width="35"></div>
+                                        <div class="contact_information-holder--item-text"><p>070-360 15 77</p></div> 
+                                    </div>
+                                    <div class="contact_information-holder--item">
+                                        <div class="contact_information-holder--item-image"><img src="assets/images/mail-icon.png" alt="location" height="35" width="35"></div>
+                                        <div class="contact_information-holder--item-text"><p><a href="mailto:info@fixalla.se">info@fixalla.se</a></p></div> 
+                                    </div>
+                                </div>
+                                    <div class="row row--information">
+                                        <div class="contact_information-holder--item">
+                                            <div class="contact_information-holder--item-image"><img src="assets/images/location-icon.png" alt="location" height="35" width="35"></div>
+                                            <div class="contact_information-holder--item-text"><p>Thors väg 24, 437 34 Lindome</p></div> 
+                                        </div>
+                                        <div class="contact_information-holder--item">
+                                            <div class="contact_information-holder--item-image"><img src="assets/images/facebook-icon.png" alt="location" height="35" width="35"></div>
+                                            <div class="contact_information-holder--item-text"><p><a target="_blank" href="https://www.facebook.com/fixalla.entrepenad?fref=ts">Följ oss på Facebook</a></p></div> 
+                                        </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="contact_information-map">
+                            <div class="wrapper wrapper--contact">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_form">
+                        <div class="wrapper wrapper--contact">
+                            <h3 class="contact--heading">Skriv till oss</h3>
+                            <div class="contact_form-container">
+                                <form method="" action="">
+                                    <div class="row row--no-margin">
+                                        <input class="contact_input" type="text" name="name" placeholder="Namn*" autocomplete="off">
+                                        <div class="contact_form-error"></div>
+                                    </div>
+                                    <div class="row row--no-margin">
+                                        <input class="contact_input" type="text" name="phone" placeholder="Telefonnummer*" autocomplete="off">
+                                        <div class="contact_form-error"></div>
+                                    </div>
+                                    <div class="row row--no-margin">
+                                        <input class="contact_input" type="email" name="email" placeholder="E-post*" autocomplete="off">
+                                        <div class="contact_form-error"></div>
+                                    </div>
+                                    <div class="row row--no-margin">
+                                        <input class="contact_input" type="text" name="heading" placeholder="Ämne*" autocomplete="off">
+                                        <div class="contact_form-error"></div>
+                                    </div>
+                                    <textarea class="contact_input contact_textarea"  placeholder="Meddelande"></textarea>
+                                    <input class="button button--submit" type="submit" value="Skicka">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <p>Fixalla HB, Thors väg 24, 437 34 LINDOME Org.nr 969781-9127   |   Fixalla © Copyright 2017</p>
+            </div>
+        </div>
+         <script>
+            function initMap() {
+                var uluru = {lat: 57.5953732, lng: 12.1016032};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru
+                
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+            }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZTefz98j5lIqtlzD3k0Bu_qVXBvPWc1k&callback=initMap">
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/navigation.js"></script>
+        <script src="assets/js/link.js"></script>
     </body>
 </html>

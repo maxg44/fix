@@ -19,10 +19,50 @@
         text-align: center;
     }
 
+    &--contact {
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+    }
+
 }
 
 p {
     margin: 15px 0;
     line-height: 1.2;
     color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+
+    &--no-margin {
+        margin: 12px 0;
+        display: block;
+
+        @mixin atMedium {
+            display: flex;
+        }
+    }
+
+
+    &--information {
+        display: block;
+    }
+
+    &--information {
+        @mixin atLarge {
+            display: flex;
+            margin: 20px 0;
+        }
+    }
+
+   
 }

@@ -9,4 +9,12 @@
         width: 80%;
         padding: 0 12px;
     }
+
+    &--contact {
+        width: 100%;
+
+        @mixin atMedium {
+            width: 90%;
+        }
+    }
 }

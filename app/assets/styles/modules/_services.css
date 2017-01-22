@@ -18,7 +18,7 @@
         display: flex;
         margin: 0 auto;
         margin-bottom: 20px;
-        border: 10px solid $subRed;
+        border: 10px solid $blue;
         border-left: none;
         transition: all 200ms ease-in-out;
         
@@ -64,7 +64,7 @@
 
     &_container:hover .services_container-image {
         @mixin atMedium {
-            background-color: $mainRed;
+            background-color: $subBlue;
         }
         
     }
@@ -80,7 +80,7 @@
 
     &_container-image {
         display: inline-block;
-        background-color: $subRed;
+        background-color: $blue;
         padding:10px;
         text-align: center;
         width: 100%;

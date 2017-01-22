@@ -1,0 +1,15 @@
+
+
+.footer {
+    width: 100%;
+    min-height: 90px;
+    background-color: #000;
+
+    & p {
+        color: #eee;
+        margin: 0;
+        line-height: 90px;
+        text-align: center;
+        font-weight: 200;
+    }
+}

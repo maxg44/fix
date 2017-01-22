@@ -1,0 +1,38 @@
+
+
+
+.about {
+    min-height: 400px;
+    margin-bottom: 40px;
+
+    &_container {
+
+        @mixin atMedium {
+            display: flex;
+            padding: 30px 0;
+        }
+        
+        
+    }
+
+    &_image {
+        margin-top: 40px;
+
+        @mixin atMedium {
+            margin-top: 0;
+        }
+
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    &_text {
+        padding: 0;
+
+        @mixin atMedium {
+            padding: 12px;
+        }
+    }
+
+}
