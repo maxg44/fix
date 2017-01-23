@@ -22,7 +22,13 @@
         border-left: none;
         transition: all 200ms ease-in-out;
         
-        
+        & a {
+            display: flex;
+
+            @mixin atMedium {
+                display: block;
+            }
+        }
 
         &:last-of-type {
             margin-right: 0;
@@ -30,8 +36,8 @@
 
         @mixin atMedium {
             float: left;
-            width: 49%;
             margin-right: 2%;
+            width: 49%;
             display: block;
             border: none;
 

@@ -28,16 +28,16 @@
                     </div>
 
                     <ul>
-                        <li><a href="#">Hem</a></li>
-                        <li><a href="#">Våra tjänster</a></li>
-                        <li><a href="#">Om oss</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#top">Hem</a></li>
+                        <li><a href="#services">Våra tjänster</a></li>
+                        <li><a href="#about">Om oss</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="hero">
+        <div id="top" class="hero">
             <img class="hero_image" src="" alt="">
             <div class="hero_lift">
                 <h2 class="hero_lift-text">Vi ger er bra service där inga jobb är för små.</h2>
@@ -50,53 +50,64 @@
             <div class="wrapper">
                 <h2 class="main-heading">Vad kan vi hjälpa <strong>dig</strong> med?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi, eum alias at labore! Itaque voluptatum cupiditate id odit, neque mollitia corporis, possimus cumque quibusdam dolore dolores, sed vitae aliquam.</p>
+                
                 <div class="services_container">
-                    <div class="services_container-image">
-                        <img src="assets/images/drill.png" alt="Snickeri">
-                    </div>
-                    <div class="services_container-text">
-                        <h4>Snickeri & Måleri</h4>
-                        <ul>
-                            <li>Text</li>
-                            <li>Text</li>
-                            <li>Text</li>
-                        </ul>
-                    </div>
+                    <a href="#carpenter">
+                        <div class="services_container-image">
+                            <img src="assets/images/drill.png" alt="Snickeri">
+                        </div>
+                        <div class="services_container-text">
+                            <h4>Snickeri & Måleri</h4>
+                            <ul>
+                                <li>Text</li>
+                                <li>Text</li>
+                                <li>Text</li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
+               
+                
                 <div class="services_container">
-                    <div class="services_container-image">
-                        <img src="assets/images/plunger.png" alt="vvs">
-                    </div>
-                    <div class="services_container-text">
-                        <h4>Värme, Vatten & Sanitet</h4>
-                        <ul>
-                            <li>Text</li>
-                            <li>Text</li>
-                            <li>Text</li>
-                        </ul>
-                    </div>
+                    <a href="#plumbing">
+                        <div class="services_container-image">
+                            <img src="assets/images/plunger.png" alt="vvs">
+                        </div>
+                        <div class="services_container-text">
+                            <h4>Värme, Vatten & Sanitet</h4>
+                            <ul>
+                                <li>Text</li>
+                                <li>Text</li>
+                                <li>Text</li>
+                            </ul>
+                        </div>
+                    </a> 
                 </div>
+                   
+               
                 <div class="services_container">
-                    <div class="services_container-image">
-                        <img src="assets/images/other.png" alt="other">
-                    </div>
-                    <div class="services_container-text">
-                        <h4>Grovstädning & Bortforsling</h4>
-                        <ul>
-                            <li>Text</li>
-                            <li>Text</li>
-                            <li>Text</li>
-                        </ul>
-                    </div>
+                    <a href="#other">
+                        <div class="services_container-image">
+                            <img src="assets/images/other.png" alt="other">
+                        </div>
+                        <div class="services_container-text">
+                            <h4>Grovstädning & Bortforsling</h4>
+                            <ul>
+                                <li>Text</li>
+                                <li>Text</li>
+                                <li>Text</li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="offer offer--carpenter">
+        <div id="carpenter" class="offer offer--carpenter">
             <div class="offer_image"></div>
                 <div class="offer_heading">
                     <div class="offer_heading--center">
                         <h1 class="main-heading offer_heading-text">Snickeri & Måleri</h1>
-                        <a href="#" class="button button--large button--service">Kontakta oss för offert</a>
+                        <a href="#contact" class="button button--large button--service">Kontakta oss för offert</a>
                     </div>
                 </div>
             
@@ -109,12 +120,12 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="offer offer--plumbing">
+        <div id="plumbing" class="offer offer--plumbing">
             <div class="offer_image"></div>
                 <div class="offer_heading offer_heading--odd">
                     <div class="offer_heading--center">
                         <h1 class="main-heading offer_heading-text">Värme, Vatten & Sanitet</h1>
-                        <a href="#" class="button button--large button--service">Kontakta oss för offert</a>
+                        <a href="#contact" class="button button--large button--service">Kontakta oss för offert</a>
                     </div>
                 </div>
             
@@ -127,12 +138,12 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="offer offer--cleaning">
+        <div id="other" class="offer offer--cleaning">
             <div class="offer_image"></div>
                 <div class="offer_heading">
                     <div class="offer_heading--center">
                         <h1 class="main-heading offer_heading-text">Grovstädning & Bortforsling</h1>
-                        <a href="#" class="button button--large button--service">Kontakta oss för offert</a>
+                        <a href="#contact" class="button button--large button--service">Kontakta oss för offert</a>
                     </div>
                 </div>
             
@@ -145,7 +156,7 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="about">
+        <div id="about" class="about">
             <div class="wrapper">
                 <h2 class="main-heading">Om Fixalla</h2>
                 <div class="about_container">
@@ -162,7 +173,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div id="contact" class="contact">
                 <div class="contact_heading">
                     <h2 class="main-heading main-heading--contact" >Kontakta oss <span>Så tar vi oss an era utmaningar</span></h2>
                 </div>
